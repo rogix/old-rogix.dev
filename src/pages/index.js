@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
@@ -38,22 +39,28 @@ function Home() {
   const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <header className={clsx("hero hero--primary", styles.heroBanner)}>
+      <header className={clsx("hero shadow--lw", styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
+          <div className={styles.social}>
+            <Link
+              className={clsx("button button--outline", styles.socialButton)}
+              to={useBaseUrl("blog/")}
+            >
+              <FaGithub size="3rem" />
+            </Link>
             <Link
               className={clsx(
-                "button button--outline button--secondary button--lg",
-                styles.getStarted
+                "button button--outline shadow--lw",
+                styles.socialButton
               )}
-              to={useBaseUrl("docs/")}
+              to={useBaseUrl("blog/")}
             >
-              Get Started
+              <FaLinkedin size="3rem" />
             </Link>
           </div>
         </div>
