@@ -1,6 +1,7 @@
 module.exports = {
   title: "Rogério",
   customFields: {
+    name: "Rogério Pereira",
     subtitle: "Desenvolvedor Web",
   },
   tagline: "Olá, esse é meu espaço onde eu escrevo sobre desenvolvimento web.",

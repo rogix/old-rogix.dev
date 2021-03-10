@@ -57,11 +57,12 @@ function Home() {
     >
       <header className={clsx("hero shadow--lw", styles.heroBanner)}>
         <div className="container">
+          <h1 className="hero__title">{siteConfig.customFields.name}</h1>
           <img
             className={styles.picture}
             src={siteConfig.themeConfig.navbar.logo.src}
           />
-          <h1 className="hero__title">{siteConfig.customFields.subtitle}</h1>
+          <i className={styles.subtitle}>{siteConfig.customFields.subtitle}</i>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.social}>
             <Link
