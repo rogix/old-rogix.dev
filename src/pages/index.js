@@ -17,15 +17,28 @@ const features = [
   {
     imageUrl: "img/node.svg",
   },
+  {
+    imageUrl: "img/css.svg",
+  },
+  {
+    imageUrl: "img/html.svg",
+  },
+  {
+    imageUrl: "img/vue.svg",
+  },
 ];
 
 function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={clsx("col col--4", styles.feature)}>
+    <div className={clsx("col col--2", styles.feature)}>
       {imgUrl && (
         <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
+          <img
+            className={clsx("shadow--md", styles.featureImage)}
+            src={imgUrl}
+            alt={title}
+          />
         </div>
       )}
       <h3>{title}</h3>
@@ -44,23 +57,24 @@ function Home() {
     >
       <header className={clsx("hero shadow--lw", styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
+          <img
+            className={styles.picture}
+            src={siteConfig.themeConfig.navbar.logo.src}
+          />
+          <h1 className="hero__title">{siteConfig.customFields.subtitle}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.social}>
             <Link
               className={clsx("button button--outline", styles.socialButton)}
               to={useBaseUrl("blog/")}
             >
-              <FaGithub size="3rem" />
+              <FaGithub size="2rem" />
             </Link>
             <Link
-              className={clsx(
-                "button button--outline shadow--lw",
-                styles.socialButton
-              )}
+              className={clsx("button button--outline", styles.socialButton)}
               to={useBaseUrl("blog/")}
             >
-              <FaLinkedin size="3rem" />
+              <FaLinkedin size="2rem" />
             </Link>
           </div>
         </div>

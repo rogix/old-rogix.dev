@@ -25,6 +25,10 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+.hero__title {
+  font-size: 2rem;
+}
+
 .navbar__logo {
   border-radius: 50%;
 }
@@ -35,18 +39,17 @@
 }
 
 .button--outline {
-  background-color: #2c2d30;
   border: none;
   border-radius: 50px;
-  box-shadow: 3px 3px 3px #202125, -3px -3px 3px #353535;
+  box-shadow: var(--ifm-box-hover);
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
+  color: var(--ifm-button-color-mine);
 }
 
 .button--outline:hover,
 .button--outline:active {
-  /* color: #fff; */
-  box-shadow: inset 3px 3px 3px #202125, inset -3px -3px 3px #353535;
+  box-shadow: var(--ifm-inset-hover);
 }
 
 html[data-theme="light"] {
@@ -56,7 +59,10 @@ html[data-theme="light"] {
   --ifm-background-color: #f3f5f8;
 
   --ifm-button-background-color: #f3f5f8;
-  --ifm-button-border-color: #2c2d30;
+
+  --ifm-inset-hover: inset 3px 3px 3px #cdcdcd, inset -3px -3px 3px #fafafa;
+  --ifm-box-hover: 3px 3px 3px #cdcdcd, -3px -3px 3px #fafafa;
+  --ifm-button-color-mine: #77838f;
 }
 
 html[data-theme="dark"] {
@@ -69,5 +75,8 @@ html[data-theme="dark"] {
   --ifm-background-surface-color: #242526;
 
   --ifm-button-background-color: #2c2d30;
-  --ifm-button-border-color: #9da1a5;
+  --ifm-button-color-mine: #9da1a5;
+
+  --ifm-inset-hover: inset 3px 3px 3px #202125, inset -3px -3px 3px #353535;
+  --ifm-box-hover: 3px 3px 3px #202125, -3px -3px 3px #353535;
 }

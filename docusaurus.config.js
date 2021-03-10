@@ -1,6 +1,9 @@
 module.exports = {
-  title: "Blog!",
-  tagline: "Esse é meu espaço seja bem vindo!",
+  title: "Rogério",
+  customFields: {
+    subtitle: "Desenvolvedor Web",
+  },
+  tagline: "Olá, esse é meu espaço onde eu escrevo sobre desenvolvimento web.",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
