@@ -1,16 +1,14 @@
 ---
-slug: welcome
-title: Welcome
-author: Yangshun Tay
-author_title: Front End Engineer @ Facebook
-author_url: https://github.com/yangshun
-author_image_url: https://avatars0.githubusercontent.com/u/1315101?s=400&v=4
-tags: [facebook, hello, docusaurus]
+slug: primeiro-post
+title: Primeiro Artigo
+author: Rogério Pereira
+author_title: Desenvolvedor Front End
+author_url: rogix.dev
+author_image_url: https://avatars.githubusercontent.com/u/12768403?s=460&u=a08f030aafafc606eb6bfcdfd7355c897867bfd5&v=4
+tags: [react, javascript, css]
 ---
 
-Blog features are powered by the blog plugin. Simply add files to the `blog` directory. It supports tags as well!
-
-Delete the whole directory if you don't want the blog features. As simple as that!
+Esse é meu primeiro artigo
 
 <!--truncate-->
 
