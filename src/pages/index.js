@@ -65,18 +65,18 @@ function Home() {
           <i className={styles.subtitle}>{siteConfig.customFields.subtitle}</i>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.social}>
-            <Link
+            <a
+              href="https://github.com/rogix"
               className={clsx("button button--outline", styles.socialButton)}
-              to={useBaseUrl("blog/")}
             >
               <FaGithub size="2rem" />
-            </Link>
-            <Link
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rogerio-marques-pereira/"
               className={clsx("button button--outline", styles.socialButton)}
-              to={useBaseUrl("blog/")}
             >
               <FaLinkedin size="2rem" />
-            </Link>
+            </a>
           </div>
         </div>
       </header>
