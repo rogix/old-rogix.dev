@@ -10,7 +10,7 @@ module.exports = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
+  organizationName: "rogix", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
   themeConfig: {
     navbar: {
@@ -20,11 +20,12 @@ module.exports = {
         src: "img/meme.jpg",
       },
       items: [
-        { to: "blog", label: "Blog", position: "left" },
+        { to: "blog", label: "Blog", position: "left", className: "blog" },
         {
           href: "https://github.com/rogix",
-          label: "GitHub",
           position: "right",
+          className: "header-github-link",
+          "aria-label": "GitHub repository",
         },
       ],
     },
@@ -40,8 +41,7 @@ module.exports = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
+          editUrl: "https://github.com/rogix",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

@@ -24,7 +24,7 @@ const features = [
     imageUrl: "img/html.svg",
   },
   {
-    imageUrl: "img/vue.svg",
+    imageUrl: "img/code.svg",
   },
 ];
 
