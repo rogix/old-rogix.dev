@@ -1,5 +1,14 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaReact,
+  FaNodeJs,
+  FaCss3,
+  FaHtml5,
+  FaJsSquare,
+  FaCode,
+} from "react-icons/fa";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
@@ -9,40 +18,34 @@ import styles from "./styles.module.css";
 
 const features = [
   {
-    imageUrl: "img/js.svg",
+    imageUrl: <FaJsSquare size="2rem" color="yellow" />,
   },
   {
-    imageUrl: "img/react.svg",
+    imageUrl: <FaReact size="2rem" color="#61dafb" />,
   },
   {
-    imageUrl: "img/node.svg",
+    imageUrl: <FaNodeJs size="2rem" color="#026e00" />,
   },
   {
-    imageUrl: "img/css.svg",
+    imageUrl: <FaCss3 size="2rem" color="#268fc9" />,
   },
   {
-    imageUrl: "img/html.svg",
+    imageUrl: <FaHtml5 size="2rem" color="#e96227" />,
   },
   {
-    imageUrl: "img/code.svg",
+    imageUrl: <FaCode size="2rem" color="#19a8b5" />,
   },
 ];
 
 function Feature({ imageUrl, title, description }) {
-  const imgUrl = useBaseUrl(imageUrl);
+  // const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={clsx("col col--2", styles.feature)}>
-      {imgUrl && (
+      {imageUrl && (
         <div className="text--center">
-          <img
-            className={clsx("shadow--md", styles.featureImage)}
-            src={imgUrl}
-            alt={title}
-          />
+          <div className={styles.featureImage}>{imageUrl}</div>
         </div>
       )}
-      <h3>{title}</h3>
-      <p>{description}</p>
     </div>
   );
 }
