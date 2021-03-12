@@ -64,6 +64,9 @@ html[data-theme="light"] {
   --ifm-inset-hover: inset 3px 3px 3px #cdcdcd, inset -3px -3px 3px #fafafa;
   --ifm-box-hover: 3px 3px 3px #cdcdcd, -3px -3px 3px #fafafa;
   --ifm-button-color-mine: #77838f;
+
+  --rgx-box-shadow-inner: inset 3px 3px 3px #cdcdcd, inset -3px -3px 3px #fafafa;
+  --rgx-box-shadow-outer: 3px 3px 3px #cdcdcd, -3px -3px 3px #fafafa;
 }
 
 html[data-theme="dark"] {
@@ -80,6 +83,9 @@ html[data-theme="dark"] {
 
   --ifm-inset-hover: inset 3px 3px 3px #202125, inset -3px -3px 3px #353535;
   --ifm-box-hover: 3px 3px 3px #202125, -3px -3px 3px #353535;
+
+  --rgx-box-shadow-inner: inset 3px 3px 3px #202125, inset -3px -3px 3px #353535;
+  --rgx-box-shadow-outer: 3px 3px 3px #202125, -3px -3px 3px #353535;
 }
 
 .header-github-link:hover {
@@ -102,26 +108,15 @@ html[data-theme="dark"] .header-github-link:before {
 
 .navbar__link--active {
   border-radius: 2rem;
-  box-shadow: inset 3px 3px 3px #cdcdcd, inset -3px -3px 3px #fafafa;
+  box-shadow: var(--rgx-box-shadow-inner);
 }
 
 .blog.navbar__link:hover {
   border-radius: 2rem;
-  box-shadow: inset 3px 3px 3px #cdcdcd, inset -3px -3px 3px #fafafa;
-}
-
-html[data-theme="dark"] .navbar__link--active {
-  border-radius: 2rem;
-  box-shadow: inset 3px 3px 3px #202125, inset -3px -3px 3px #353535;
-}
-
-html[data-theme="dark"] .blog.navbar__link:hover {
-  border-radius: 2rem;
-  box-shadow: inset 3px 3px 3px #202125, inset -3px -3px 3px #353535;
+  box-shadow: var(--rgx-box-shadow-inner);
 }
 
 .react-toggle-track {
-  /* width: 60px !important; */
   height: 34px !important;
   border-radius: 30px;
   background-color: rgb(44, 45, 48) !important;
@@ -143,7 +138,7 @@ html[data-theme="light"] .react-toggle-track {
 .table-of-contents__link:hover code,
 .table-of-contents__link--active,
 .table-of-contents__link--active code {
-  box-shadow: var(--ifm-inset-hover);
+  box-shadow: var(--rgx-box-shadow-inner);
   padding: 5px 10px;
   border-radius: 10px;
 }
