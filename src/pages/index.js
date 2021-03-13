@@ -11,14 +11,12 @@ import {
 } from "react-icons/fa";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
-import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 
 const features = [
   {
-    imageUrl: <FaJsSquare size="2rem" color="yellow" />,
+    imageUrl: <FaJsSquare size="2rem" color="#ffff00" />,
   },
   {
     imageUrl: <FaReact size="2rem" color="#61dafb" />,
@@ -37,12 +35,11 @@ const features = [
   },
 ];
 
-function Feature({ imageUrl, title, description }) {
-  // const imgUrl = useBaseUrl(imageUrl);
+function Feature({ imageUrl }) {
   return (
     <div className={clsx("col col--2", styles.feature)}>
       {imageUrl && (
-        <div className="text--center">
+        <div className={clsx("text--center", styles.featureContainer)}>
           <div className={styles.featureImage}>{imageUrl}</div>
         </div>
       )}
@@ -58,7 +55,7 @@ function Home() {
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <header className={clsx("hero shadow--lw", styles.heroBanner)}>
+      <header className={clsx("hero shadow", styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.customFields.name}</h1>
           <img
