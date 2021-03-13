@@ -6,13 +6,19 @@
  */
 
 .heroBanner {
-  max-width: 50%;
+  width: 800px;
   margin: 50px auto;
   padding: 6rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
   border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+  .heroBanner {
+    width: 100%;
+  }
 }
 
 .subtitle {
