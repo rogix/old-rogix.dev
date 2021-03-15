@@ -63,8 +63,7 @@ function Home() {
           <hr className="divider"></hr>
           <div className={styles.heroName}>
             <h1 className="hero__title">
-              {siteConfig.customFields.name}
-              <mark>{siteConfig.customFields.lastName}</mark>{" "}
+              {siteConfig.customFields.name} {siteConfig.customFields.lastName}
             </h1>
           </div>
           <div className="profile-image">
@@ -75,7 +74,9 @@ function Home() {
               />
             </div>
           </div>
-          <i className={styles.subtitle}>{siteConfig.customFields.subtitle}</i>
+          <span className={styles.subtitle}>
+            {siteConfig.customFields.subtitle}
+          </span>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.social}>
             <Link

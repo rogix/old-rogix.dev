@@ -20,6 +20,8 @@
 
 body {
   font-size: 1rem;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  color: var(--rgx-color-font);
 }
 
 html[data-theme="light"] {
@@ -60,13 +62,6 @@ html[data-theme="dark"] {
   --rgx-color-font: #cfd2d6;
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
-
-body {
-  /* font-family: "Poppins", Helvetica, Arial, sans-serif; */
-  font-family: "Source Sans Pro", sans-serif;
-  color: var(--rgx-color-font);
-}
 
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
@@ -102,7 +97,7 @@ body {
   border: none;
   border-radius: 50px;
   box-shadow: var(--rgx-box-shadow-outer);
-  color: var(--ifm-button-color-mine);
+  color: var(--ifm-color-primary);
 }
 
 .button--outline:hover,
@@ -110,6 +105,8 @@ body {
   box-shadow: var(--rgx-box-shadow-inner);
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
+
+  color: var(--ifm-color-primary);
 }
 
 .header-github-link:hover {
