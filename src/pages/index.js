@@ -39,7 +39,7 @@ const features = [
 
 function Feature({ imageUrl }) {
   return (
-    <div className={clsx("col col--2", styles.feature)}>
+    <div className={clsx(styles.feature)}>
       {imageUrl && (
         <div className={clsx("text--center", styles.featureContainer)}>
           <div className={styles.featureImage}>{imageUrl}</div>
@@ -89,7 +89,7 @@ function Home() {
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className="container">
-              <div className="row">
+              <div className={styles.techs}>
                 {features.map((props, idx) => (
                   <Feature key={idx} {...props} />
                 ))}
