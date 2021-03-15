@@ -15,6 +15,30 @@
   border-radius: 30px;
 }
 
+mark {
+  color: inherit;
+  padding: 0;
+  background: 0 0;
+  background-position-x: 0px;
+  background-position-y: 0px;
+  background-repeat: repeat;
+  background-image: none;
+  background-size: auto;
+  background-position-x: 0px;
+  background-position-y: 0px;
+  background-repeat: repeat;
+  background-size: auto;
+  background-image: linear-gradient(
+    120deg,
+    rgba(245, 108, 109, 1) 0,
+    rgba(245, 108, 109, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.28em;
+  background-position: 0 70%;
+  position: relative;
+}
+
 @media (max-width: 768px) {
   .heroBanner {
     width: 100%;

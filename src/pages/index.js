@@ -12,6 +12,8 @@ import {
 import clsx from "clsx";
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Link from "@docusaurus/Link";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 
 const features = [
@@ -58,7 +60,12 @@ function Home() {
     >
       <header className={clsx("hero shadow", styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.customFields.name}</h1>
+          <div className={styles.heroName}>
+            <h1 className="hero__title">
+              {siteConfig.customFields.name}
+              <mark>{siteConfig.customFields.lastName}</mark>{" "}
+            </h1>
+          </div>
           <img
             className={styles.picture}
             src={siteConfig.themeConfig.navbar.logo.src}
@@ -66,18 +73,15 @@ function Home() {
           <i className={styles.subtitle}>{siteConfig.customFields.subtitle}</i>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.social}>
-            <a
-              href="https://github.com/rogix"
-              className={clsx("button button--outline", styles.socialButton)}
+            <Link
+              className={clsx(
+                "button button--outline button--lg",
+                styles.getStarted
+              )}
+              to={useBaseUrl("blog")}
             >
-              <FaGithub size="2rem" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/rogerio-marques-pereira/"
-              className={clsx("button button--outline", styles.socialButton)}
-            >
-              <FaLinkedin size="2rem" />
-            </a>
+              Visitar Blog
+            </Link>
           </div>
         </div>
       </header>

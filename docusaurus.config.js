@@ -1,7 +1,8 @@
 module.exports = {
   title: "Rogério",
   customFields: {
-    name: "Rogério Pereira",
+    name: "Rogério",
+    lastName: "Pereira",
     subtitle: "Desenvolvedor Web",
   },
   tagline: "Olá, esse é meu blog onde eu escrevo sobre programação e afins.",
@@ -30,7 +31,6 @@ module.exports = {
       ],
     },
     footer: {
-      style: "dark",
       copyright: `© ${new Date().getFullYear()}`,
     },
   },
