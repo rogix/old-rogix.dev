@@ -60,16 +60,21 @@ function Home() {
     >
       <header className={clsx("hero shadow", styles.heroBanner)}>
         <div className="container">
+          <hr className="divider"></hr>
           <div className={styles.heroName}>
             <h1 className="hero__title">
               {siteConfig.customFields.name}
               <mark>{siteConfig.customFields.lastName}</mark>{" "}
             </h1>
           </div>
-          <img
-            className={styles.picture}
-            src={siteConfig.themeConfig.navbar.logo.src}
-          />
+          <div className="profile-image">
+            <div className="profile-image-border">
+              <img
+                className={styles.picture}
+                src={siteConfig.themeConfig.navbar.logo.src}
+              />
+            </div>
+          </div>
           <i className={styles.subtitle}>{siteConfig.customFields.subtitle}</i>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.social}>

@@ -8,7 +8,7 @@
 .heroBanner {
   width: 800px;
   margin: 50px auto;
-  padding: 6rem 0;
+  padding: 3rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -30,8 +30,8 @@ mark {
   background-size: auto;
   background-image: linear-gradient(
     120deg,
-    rgba(245, 108, 109, 1) 0,
-    rgba(245, 108, 109, 1) 100%
+    rgba(50, 181, 249, 1) 0,
+    rgba(50, 181, 249, 1) 100%
   );
   background-repeat: no-repeat;
   background-size: 100% 0.28em;
@@ -51,8 +51,11 @@ mark {
 }
 
 .picture {
-  width: 150px;
   border-radius: 50%;
+  width: 9.375rem;
+  height: 9.375rem;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 966px) {
@@ -70,26 +73,13 @@ mark {
 .social {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 200px;
+  justify-content: center;
   margin: 0 auto;
 }
 
 .socialIcons {
   width: 40px;
 }
-
-/* .feature {
-  display: flex;
-  justify-content: space-between;
-}
-
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
-} */
 
 .techs {
   display: grid;
@@ -104,6 +94,7 @@ mark {
     grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
   }
 }
+
 .featureContainer {
   display: flex;
   justify-content: center;
