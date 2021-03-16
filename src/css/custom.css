@@ -332,3 +332,15 @@ hr.divider:after {
   position: relative;
   z-index: 2;
 }
+
+.tags {
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.tags:hover {
+  text-decoration: none;
+  padding: 5px 15px;
+  box-shadow: var(--rgx-box-shadow-inner);
+  border-radius: 20px;
+}
