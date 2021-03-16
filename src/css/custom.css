@@ -61,7 +61,7 @@ html[data-theme="dark"] {
   --rgx-box-shadow-outer: 3px 3px 3px #202125, -3px -3px 3px #353535;
   --rgx-color-font: #cfd2d6;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
