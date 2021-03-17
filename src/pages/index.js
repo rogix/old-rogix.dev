@@ -1,7 +1,5 @@
 import React from "react";
 import {
-  FaGithub,
-  FaLinkedin,
   FaReact,
   FaNodeJs,
   FaCss3,
