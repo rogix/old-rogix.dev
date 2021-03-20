@@ -299,17 +299,22 @@ hr {
   border-radius: 20px;
 }
 
-.pagination-nav__item {
+.pagination-nav__item--prev,
+.pagination-nav__item--next {
   box-shadow: var(--rgx-box-shadow-inner);
   padding: 0.5rem;
   border-radius: 10px;
+  display: flex;
+  flex: 1 50%;
+  max-width: 100%;
 }
 
-.pagination-nav__item a {
+.pagination-nav__item--prev a,
+.pagination-nav__item--next a {
   box-shadow: var(--rgx-box-shadow-outer);
   border: none;
 }
 
-.pagination-nav__item a:hover {
-  box-shadow: none;
+.pagination-nav__item.pagination-nav__item--next {
+  padding: 0;
 }
