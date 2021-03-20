@@ -1,12 +1,13 @@
 ---
 slug: quarto-post
 title: Quarto Artigo
-# author: Rogério Pereira
-# author_title: Desenvolvedor Front End
+author: Rogério Pereira
+author_title: Desenvolvedor Front End
 author_url: rogix.dev
 image: https://avatars.githubusercontent.com/u/12768403?s=460&u=a08f030aafafc606eb6bfcdfd7355c897867bfd5&v=4
-# author_image_url: https://avatars.githubusercontent.com/u/12768403?s=460&u=a08f030aafafc606eb6bfcdfd7355c897867bfd5&v=4
+author_image_url: https://avatars.githubusercontent.com/u/12768403?s=460&u=a08f030aafafc606eb6bfcdfd7355c897867bfd5&v=4
 tags: [html, javascript, node]
+hide_table_of_contents: true
 ---
 
 Esse é meu primeiro artigo

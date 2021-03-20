@@ -33,6 +33,7 @@ module.exports = {
     footer: {
       copyright: `© ${new Date().getFullYear()}`,
     },
+    hideableSidebar: true,
   },
   presets: [
     [
