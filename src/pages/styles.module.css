@@ -23,8 +23,14 @@
 
 .subtitle {
   display: block;
-  font-size: 20px;
+  font-size: 1rem;
   color: #9da1a5;
+}
+
+@media screen and (min-width: 768px) {
+  .subtitle {
+    font-size: 1.25rem;
+  }
 }
 
 .picture {
