@@ -34,10 +34,6 @@ html[data-theme="light"] {
 
   --ifm-button-background-color: #f3f5f8;
 
-  --ifm-inset-hover: inset 3px 3px 3px #cdcdcd, inset -3px -3px 3px #fafafa;
-  --ifm-box-hover: 3px 3px 3px #cdcdcd, -3px -3px 3px #fafafa;
-  --ifm-button-color-mine: #77838f;
-
   --rgx-color-font: #3c4146;
   --rgx-background-color: #f3f5f8;
   --rgx-box-shadow-inner: inset 3px 3px 3px #cdcdcd, inset -3px -3px 3px #fafafa;
@@ -53,10 +49,6 @@ html[data-theme="dark"] {
   --ifm-background-surface-color: #242526;
 
   --ifm-button-background-color: #2c2d30;
-  --ifm-button-color-mine: #9da1a5;
-
-  --ifm-inset-hover: inset 3px 3px 3px #202125, inset -3px -3px 3px #353535;
-  --ifm-box-hover: 3px 3px 3px #202125, -3px -3px 3px #353535;
 
   --rgx-color-font: #cfd2d6;
   --rgx-background-color: #2c2d30;
