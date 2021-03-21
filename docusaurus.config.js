@@ -5,7 +5,7 @@ module.exports = {
     lastName: "Pereira",
     subtitle: "Analista Desenvolvedor",
   },
-  tagline: "Olá, esse é meu blog onde eu escrevo sobre programação.",
+  tagline: "Olá!",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
