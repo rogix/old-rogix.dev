@@ -34,6 +34,9 @@ module.exports = {
       copyright: `© ${new Date().getFullYear()}`,
     },
     hideableSidebar: true,
+    colorMode: {
+      defaultMode: "dark",
+    },
   },
   presets: [
     [
