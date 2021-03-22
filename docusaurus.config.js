@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Rogério",
+  title: "Rogix",
   customFields: {
     name: "Rogério",
     lastName: "Pereira",
