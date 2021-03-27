@@ -44,7 +44,6 @@ module.exports = {
       {
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl: "https://github.com/rogix",
         },
         theme: {
