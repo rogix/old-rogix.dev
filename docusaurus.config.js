@@ -21,7 +21,7 @@ module.exports = {
         src: "img/meme.jpg",
       },
       items: [
-        // { to: "blog", label: "Blog", position: "left", className: "blog" },
+        { to: "blog", label: "Blog", position: "left", className: "blog" },
         {
           href: "https://github.com/rogix",
           position: "right",
