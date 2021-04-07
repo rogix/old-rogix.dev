@@ -7,6 +7,7 @@ author_url: rogix.dev
 author_image_url: https://avatars.githubusercontent.com/u/12768403?s=460&u=a08f030aafafc606eb6bfcdfd7355c897867bfd5&v=4
 tags: [react, javascript, css]
 draft: true
+image: https://i.imgur.com/mErPwqL.png
 hide_table_of_contents: true
 ---
 

@@ -57,6 +57,7 @@ function BlogPostItem(props) {
 
     return (
       <header>
+        <img src={image} alt="" />
         <TitleHeading
           className={clsx("margin-bottom--sm", styles.blogPostTitle)}
         >
