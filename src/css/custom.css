@@ -194,6 +194,10 @@ hr {
   box-shadow: var(--rgx-box-shadow-outer);
 }
 
+.inner-shadow {
+  box-shadow: var(--rgx-box-shadow-inner);
+}
+
 .footer__links {
   display: inline-flex;
   margin-bottom: 0;
@@ -319,4 +323,12 @@ hr {
 
 .pagination-nav__item.pagination-nav__item--next {
   padding: 0;
+}
+
+.radius-2 {
+  border-radius: 2rem;
+}
+
+.radius-5 {
+  border-radius: 5rem;
 }

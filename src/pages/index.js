@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import {
   FaReact,
   FaNodeJs,
@@ -13,6 +13,14 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
+import Parallax from "parallax-js";
+
+import Circle from "@site/static/img/background/circle-dark.svg";
+import DashedCircle from "@site/static/img/background/dashed-circle-dark.svg";
+import Square from "@site/static/img/background/square-dark.svg";
+import SquarePoly from "@site/static/img/background/square-poly-dark.svg";
+import SquareRL from "@site/static/img/background/square-rl-dark.svg";
+import Avatar from "@site/static/img/meme.jpg";
 
 const features = [
   {
@@ -50,12 +58,21 @@ function Feature({ imageUrl }) {
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
+  const sceneEl = useRef(null);
+
+  useEffect(() => {
+    const parallaxInstance = new Parallax(sceneEl.current, {
+      relativeInput: true,
+      hoverOnly: true,
+    });
+
+    parallaxInstance.enable();
+
+    return () => parallaxInstance.disable();
+  }, []);
+
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Blog Front End"
-      className="test"
-    >
+    <Layout description="Blog Front End" className="test">
       <header className={clsx("hero shadow", styles.heroBanner)}>
         <div className="container">
           <hr className="divider"></hr>
@@ -66,10 +83,7 @@ function Home() {
           </div>
           <div className="profile-image">
             <div className="profile-image-border">
-              <img
-                className={styles.picture}
-                src={siteConfig.themeConfig.navbar.logo.src}
-              />
+              <img className={styles.picture} src={Avatar} />
             </div>
           </div>
           <span className={styles.subtitle}>
@@ -102,6 +116,26 @@ function Home() {
           </section>
         )}
       </main>
+
+      <div ref={sceneEl} className={clsx("bkg-dark", styles.parallax)}>
+        <Circle
+          data-depth="0.5"
+          alt=""
+          className={clsx("inner-shadow radius-5", styles.p1)}
+        />
+        <DashedCircle
+          data-depth="0.3"
+          alt=""
+          className={clsx("inner-shadow radius-5", styles.p2)}
+        />
+        <Square
+          data-depth="0.5"
+          alt=""
+          className={clsx("shadow radius-2", styles.p3)}
+        />
+        <SquareRL data-depth="0.7" alt="" className={styles.p4} />
+        <SquarePoly data-depth="0.7" alt="" className={styles.p5} />
+      </div>
     </Layout>
   );
 }

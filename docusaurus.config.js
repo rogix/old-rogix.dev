@@ -35,7 +35,7 @@ module.exports = {
     },
     hideableSidebar: true,
     colorMode: {
-      defaultMode: "light",
+      defaultMode: "dark",
     },
   },
   presets: [
