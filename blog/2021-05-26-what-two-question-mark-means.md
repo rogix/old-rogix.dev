@@ -1,5 +1,5 @@
 ---
-slug: two-question-mark-in-js
+slug: nullish-coalescing-operator
 title: O que significa dois pontos de interrogação (??) em Javascript?
 author: Rogério Pereira
 author_title: Desenvolvedor Front End
@@ -14,9 +14,26 @@ Nullish coalescing operator
 
 <!--truncate-->
 
-## Coale... o que?
+## Nullish... o que?
 
+_Nullish coalescing operator_ é um operador lógico que usamos quando queremos retornar apenas valores que não são do tipo `null` ou `undefined`.
+
+Mas retornar de onde? O que você quer por _retornar_? E por que eu preciso retornar alguma coisa?
+
+Em javascript temos o operador lógico `||` ou `OR` que pode ser utilizado quando precisamos escolher qual valor retornar. Então por exemplo:
+
+```javascript
+var vaiChoverHoje = true; // sim
+```
+
+```javascript
+expressãoEsquerda ?? expressãoDireita;
+```
+
+:::tip Se liga!
 Traduzindo para o bom português coalescing significa coalescendo(juntar, unir, aglutinar).
-Trata-se de um operador lógico usado quando queremos retornar apenas valores que não são do tipo `null` ou `undefined`. Não ficou claro? Tranquilo, vamos nos aprofundar um pouco mais na ideia.
+:::
+
+Não ficou claro? Tranquilo, vamos nos aprofundar um pouco mais na ideia.
 
 Talvez você já utilizado o operador lógico `OR` ou `||`.
