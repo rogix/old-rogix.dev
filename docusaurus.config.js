@@ -3,7 +3,7 @@ module.exports = {
   customFields: {
     name: "Rogério",
     lastName: "Pereira",
-    subtitle: "Analista Desenvolvedor",
+    subtitle: "Desenvolvedor Javascript",
   },
   tagline: "Olá!",
   url: "https://your-docusaurus-test-site.com",
