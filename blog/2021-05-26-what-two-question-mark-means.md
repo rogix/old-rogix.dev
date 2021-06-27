@@ -45,7 +45,7 @@ NaN             // Not a Number
 
 Exemplos de alguns valores que irão retornar `true`
 
-```jsx
+```javascript
 // Podemos testar com o objeto Boolean()
 Boolean([]) // array vazio
 Boolean({}) // objeto vazio
