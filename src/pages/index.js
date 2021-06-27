@@ -81,11 +81,16 @@ function Home() {
               {siteConfig.customFields.name} {siteConfig.customFields.lastName}
             </h1>
           </div>
-          <div className="profile-image">
-            <div className="profile-image-border">
-              <img className={styles.picture} src={Avatar} />
+            <div className={clsx("stage", styles.stage)} style={{width: '120px', height: '120px'}}>
+              <div className={clsx("cubespinners", styles.cubespinner)}>
+                <div className={styles.face1}><FaJsSquare size="6rem" color="#ffff00" /></div>
+                <div className={styles.face2}><FaReact size="6rem" color="#61dafb" /></div>
+                <div className={styles.face3}><FaNodeJs size="6rem" color="#026e00" /></div>
+                <div className={styles.face4}><FaCss3 size="6rem" color="#268fc9"/></div>
+                <div className={styles.face5}><FaHtml5 size="6rem" color="#e96227" /></div>
+                <div className={styles.face6}><FaCode size="6rem" color="#19a8b5" /></div>
+              </div>
             </div>
-          </div>
           <span className={styles.subtitle}>
             {siteConfig.customFields.subtitle}
           </span>
