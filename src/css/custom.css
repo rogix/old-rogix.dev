@@ -340,7 +340,7 @@ hr {
 
 .social-icons a {
   box-shadow: var(--rgx-box-shadow-outer);
-  color: #fff;
+  color: var(--rgx-color-font);
   padding: 10px;
   margin: 5px;
   display: flex;
