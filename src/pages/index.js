@@ -6,6 +6,8 @@ import {
   FaHtml5,
   FaJsSquare,
   FaCode,
+  FaLinkedin,
+  FaGithub
 } from "react-icons/fa";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
@@ -89,8 +91,8 @@ function Home() {
           <span className={styles.subtitle}>
             {siteConfig.customFields.subtitle}
           </span>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.social}>
+          {/* <p className="hero__subtitle">{siteConfig.tagline}</p> */}
+          {/* <div className={styles.social}>
             <Link
               className={clsx(
                 "button button--outline button--lg",
@@ -100,8 +102,20 @@ function Home() {
             >
               Visitar Blog
             </Link>
+          </div> */}
+              <div className="container">
+                <div className={styles.social}>
+                  <div className="social-icons">
+                    <Link to="https://github.com/rogix">
+                      <FaGithub size="1.5rem" />
+                    </Link>
+                    <Link to="https://linkedin.com/in/rogmxp">
+                      <FaLinkedin size="1.5rem" />
+                    </Link>
+                  </div>
+                </div>
+            </div>
           </div>
-        </div>
       </header>
       <main>
         {features && features.length > 0 && (

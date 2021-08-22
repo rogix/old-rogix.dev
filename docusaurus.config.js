@@ -16,12 +16,12 @@ module.exports = {
   themeConfig: {
     navbar: {
       title: "Rogix",
-      logo: {
-        alt: "Rogério",
-        src: "img/meme.jpg",
-      },
+      // logo: {
+      //   alt: "Rogério",
+      //   src: "img/meme.jpg",
+      // },
       items: [
-        { to: "blog", label: "Blog", position: "left", className: "blog" },
+        // { to: "blog", label: "Blog", position: "left", className: "blog" },
         {
           href: "https://github.com/rogix",
           position: "right",
