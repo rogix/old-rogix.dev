@@ -22,12 +22,12 @@ module.exports = {
       // },
       items: [
         // { to: "blog", label: "Blog", position: "left", className: "blog" },
-        {
-          href: "https://github.com/rogix",
-          position: "right",
-          className: "header-github-link",
-          "aria-label": "GitHub repository",
-        },
+        // {
+        //   href: "https://github.com/rogix",
+        //   position: "right",
+        //   className: "header-github-link",
+        //   "aria-label": "GitHub repository",
+        // },
       ],
     },
     footer: {
@@ -36,6 +36,7 @@ module.exports = {
     hideableSidebar: true,
     colorMode: {
       defaultMode: "dark",
+      respectPrefersColorScheme: true,
     },
   },
   presets: [
