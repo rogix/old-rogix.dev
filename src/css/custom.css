@@ -352,3 +352,9 @@ hr {
 .social-icons a:hover {
   box-shadow: var(--rgx-box-shadow-inner);
 }
+
+.navbar__title {
+  box-shadow: var(--rgx-box-shadow-inner);
+  padding: 5px 15px;
+  border-radius: 2rem;
+}
